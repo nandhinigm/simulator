@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_121 (Oracle Corporation)
+Package-Name: com.whispir.simulator
+Main-Class: com.whispir.simulator.Simulator

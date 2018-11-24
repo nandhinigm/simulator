@@ -1,0 +1,1 @@
+java -jar ../target/simulator-0.0.1-SNAPSHOT.jar
