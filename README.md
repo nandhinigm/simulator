@@ -38,18 +38,20 @@ Constraints:
 The toy robot must not fall off the table during movement (this also includes the initial placement of the toy robot).
 Any move that would cause the robot to fall must be ignored.
 
-Example
-Input and Output:
+Example Input and Output:
+
 a)
 PLACE 0,0,NORTH
 MOVE
 REPORT
 Output: 0,1,NORTH
+
 b)
 PLACE 0,0,NORTH
 LEFT
 REPORT
 Output: 0,0,WEST
+
 c)
 PLACE 1,2,EAST
 MOVE
@@ -62,9 +64,13 @@ Output: 3,3,NORTH
 How To Build and Execute the Application
 
 Java: Java 1.8
+
 Apache Maven: 3.5.2
+
 Junit: 4.12
+
 Mockito: 1.10.19
+
 
 To build the application, execute mvn clean install
 
