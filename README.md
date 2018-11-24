@@ -5,6 +5,7 @@ The application is a simulation of a toy robot moving on a square tabletop, of d
 Toy Robot Simulator
 
 Description
+
 The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5
 units x 5 units.
 There are no other obstructions on the table surface.
@@ -33,6 +34,7 @@ REPORT will announce the X, Y and F of the robot - this can be in any form, but 
 A robot that is not on the table can choose the ignore the MOVE, LEFT, RIGHT and REPORT commands.
 
 Constraints:
+
 The toy robot must not fall off the table during movement (this also includes the initial placement of the toy robot).
 Any move that would cause the robot to fall must be ignored.
 
