@@ -65,7 +65,8 @@ Apache Maven: 3.5.2
 Junit: 4.12  
 Mockito: 1.10.19  
 
-To build the application, execute mvn clean install  
+To build the application,  
+mvn clean install  
 
 To start the simulator,   
 cd bin/  
