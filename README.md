@@ -1,8 +1,5 @@
-# simulator
+# Toy Robot Simulator
 The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.
-
-
-Toy Robot Simulator
 
 Description
 
@@ -40,45 +37,41 @@ Any move that would cause the robot to fall must be ignored.
 
 Example Input and Output:
 
-a)
-PLACE 0,0,NORTH
-MOVE
-REPORT
-Output: 0,1,NORTH
+a)  
+PLACE 0,0,NORTH  
+MOVE  
+REPORT  
+Output: 0,1,NORTH  
 
-b)
-PLACE 0,0,NORTH
-LEFT
-REPORT
-Output: 0,0,WEST
+b)  
+PLACE 0,0,NORTH  
+LEFT  
+REPORT  
+Output: 0,0,WEST  
 
-c)
-PLACE 1,2,EAST
-MOVE
-MOVE
-LEFT
-MOVE
-REPORT
-Output: 3,3,NORTH
+c)  
+PLACE 1,2,EAST  
+MOVE  
+MOVE  
+LEFT  
+MOVE  
+REPORT  
+Output: 3,3,NORTH  
 
 How To Build and Execute the Application
 
-Java: Java 1.8
+Java: Java 1.8  
+Apache Maven: 3.5.2  
+Junit: 4.12  
+Mockito: 1.10.19  
 
-Apache Maven: 3.5.2
+To build the application, execute mvn clean install  
 
-Junit: 4.12
+To start the simulator,   
+cd bin/  
+startSimulator.bat  
 
-Mockito: 1.10.19
-
-
-To build the application, execute mvn clean install
-
-To start the simulator, 
-cd bin/
-startSimulator.bat
-
-To stop the application,
-QUIT
-CTRL+C
+To stop the application,  
+QUIT  
+CTRL+C  
 
