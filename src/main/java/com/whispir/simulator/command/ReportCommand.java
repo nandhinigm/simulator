@@ -6,6 +6,9 @@ import com.whispir.simulator.RobotPosition;
 import com.whispir.simulator.Table;
 import com.whispir.simulator.common.ValidCommands;
 
+/**
+ * REPORT will announce the X, Y and F of the robot.
+ */
 public class ReportCommand implements Command {
 	
 	public static final String NAME = ValidCommands.REPORT.name();

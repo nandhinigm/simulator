@@ -2,10 +2,16 @@ package com.whispir.simulator.command;
 
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 import com.whispir.simulator.RobotPosition;
 import com.whispir.simulator.Table;
 import com.whispir.simulator.common.FacingDirection;
 import com.whispir.simulator.common.ValidCommands;
+
+/**
+ * MOVE will move the toy robot one unit forward in the direction it is currently facing.
+ */
 
 public class MoveCommand implements Command {
 	
@@ -13,6 +19,7 @@ public class MoveCommand implements Command {
 	RobotPosition position;	
 	Table table;
 	Map<String, String> params;
+	private static final Logger logger = Logger.getLogger(MoveCommand.class);
 	
 	public MoveCommand(Table table, RobotPosition position, Map<String, String> inputParameters) {
 		this.position = position;
@@ -46,7 +53,8 @@ public class MoveCommand implements Command {
 				break;
 			case SOUTH:
 				position.setY(position.getY() - 1);				
-			}				
+			}	
+			logger.debug("Position : " + position.toString());
 		}		
 	}
 }
